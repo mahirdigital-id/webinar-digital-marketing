@@ -8,13 +8,14 @@
       Webinar Digital Marketing | Tambahan Penghasilan dari Bisnis Online
     </title>
 
-    <meta name="description"
+    <meta
+      name="description"
       content="Webinar Digital Marketing gratis untuk kamu yang ingin mulai mendapatkan penghasilan tambahan dari bisnis online tanpa harus resign."
     />
 
-    <link rel="icon" type="image/png" href="assets/logo-md.jpg"/>
+    <link rel="icon" type="image/png" href="assets/logo-md.jpg" />
 
-  <link rel="apple-touch-icon" href="assets/logo-md.jpg"/>
+    <link rel="apple-touch-icon" href="assets/logo-md.jpg" />
 
     <style>
       * {
@@ -313,6 +314,43 @@
         }
       }
 
+      /* =========================
+        WEBINAR POSTER
+      ========================= */
+
+      .webinar-poster-section {
+        background: #f8fafc;
+        padding: 50px 0;
+      }
+
+      .webinar-poster {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .webinar-poster img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+      }
+
+      @media (max-width: 768px) {
+        .webinar-poster-section {
+          padding: 35px 0;
+        }
+
+        .webinar-poster {
+          width: 92%;
+        }
+
+        .webinar-poster img {
+          border-radius: 14px;
+        }
+      }
 
       /* =========================
          PROBLEM
@@ -813,81 +851,81 @@
       .final-cta .cta:hover {
         background: #eff6ff;
       }
-      
+
       /* =========================
    REGISTRATION FORM
 ========================= */
 
-.registration-section {
-  background: #f8fafc;
-}
+      .registration-section {
+        background: #f8fafc;
+      }
 
-.registration-box {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 40px;
-  border-radius: 24px;
-  border: 1px solid #dbeafe;
-  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.08);
-}
+      .registration-box {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 40px;
+        border-radius: 24px;
+        border: 1px solid #dbeafe;
+        box-shadow: 0 15px 40px rgba(37, 99, 235, 0.08);
+      }
 
-.registration-box .section-title {
-  margin-bottom: 30px;
-}
+      .registration-box .section-title {
+        margin-bottom: 30px;
+      }
 
-.form-group {
-  margin-bottom: 18px;
-}
+      .form-group {
+        margin-bottom: 18px;
+      }
 
-.form-group label {
-  display: block;
-  margin-bottom: 7px;
-  color: #1e293b;
-  font-weight: 600;
-}
+      .form-group label {
+        display: block;
+        margin-bottom: 7px;
+        color: #1e293b;
+        font-weight: 600;
+      }
 
-.form-group input {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  outline: none;
-  font-size: 16px;
-  color: #1e293b;
-  background: white;
-  transition: all 0.2s ease;
-}
+      .form-group input {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+        color: #1e293b;
+        background: white;
+        transition: all 0.2s ease;
+      }
 
-.form-group input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px #dbeafe;
-}
+      .form-group input:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px #dbeafe;
+      }
 
-.registration-button {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-}
+      .registration-button {
+        width: 100%;
+        border: none;
+        cursor: pointer;
+      }
 
-.registration-button:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
+      .registration-button:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
 
-.form-message {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
-  color: #64748b;
-}
+      .form-message {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 14px;
+        color: #64748b;
+      }
 
-@media (max-width: 768px) {
-  .registration-box {
-    padding: 28px 20px;
-    border-radius: 20px;
-  }
-}
+      @media (max-width: 768px) {
+        .registration-box {
+          padding: 28px 20px;
+          border-radius: 20px;
+        }
+      }
 
       /* =========================
          FOOTER
@@ -989,77 +1027,14 @@
       </div>
     </header>
 
-    </header>
-
-    <!-- SALES RESULT CAROUSEL -->
-    <section class="sales-carousel">
+    <!-- WEBINAR POSTER -->
+    <section class="webinar-poster-section">
       <div class="container">
-        <div class="sales-carousel-wrapper">
-
-          <button class="sales-btn"
-            onclick="changeSalesSlide(-1)"
-            aria-label="Hasil penjualan sebelumnya"
-          >
-            ‹
-          </button>
-
-          <div class="sales-track">
-            <div class="sales-slide active">
-              <img src="assets/penjualan-1.png" alt="Hasil penjualan Ahmad Fadel 1" />
-            </div>
-
-            <div class="sales-slide">
-              <img src="assets/penjualan-2.png"
-                alt="Hasil penjualan Ahmad Fadel 2"
-              />
-            </div>
-
-            <div class="sales-slide">
-              <img src="assets/penjualan-3.png"
-                alt="Hasil penjualan Ahmad Fadel 3"
-              />
-            </div>
-
-            <div class="sales-slide">
-              <img src="assets/penjualan-4.png"
-                alt="Hasil penjualan Ahmad Fadel 4"
-              />
-            </div>
-          </div>
-
-          <button class="sales-btn"
-            onclick="changeSalesSlide(1)"
-            aria-label="Hasil penjualan berikutnya"
-          >
-            ›
-          </button>
-
-        </div>
-
-        <div class="sales-dots">
-          <button
-            class="sales-dot active"
-            onclick="showSalesSlide(0)"
-            aria-label="Hasil penjualan 1"
-          ></button>
-
-          <button
-            class="sales-dot"
-            onclick="showSalesSlide(1)"
-            aria-label="Hasil penjualan 2"
-          ></button>
-
-          <button
-            class="sales-dot"
-            onclick="showSalesSlide(2)"
-            aria-label="Hasil penjualan 3"
-          ></button>
-
-          <button
-            class="sales-dot"
-            onclick="showSalesSlide(3)"
-            aria-label="Hasil penjualan 4"
-          ></button>
+        <div class="webinar-poster">
+          <img
+            src="assets/poster-webinar.png"
+            alt="Poster Webinar Digital Marketing"
+          />
         </div>
       </div>
     </section>
@@ -1256,6 +1231,85 @@
       </div>
     </section>
 
+    <!-- SALES RESULT CAROUSEL -->
+    <section class="sales-carousel">
+      <div class="container">
+        <div class="sales-carousel-wrapper">
+          <button
+            class="sales-btn"
+            onclick="changeSalesSlide(-1)"
+            aria-label="Hasil penjualan sebelumnya"
+          >
+            ‹
+          </button>
+
+          <div class="sales-track">
+            <div class="sales-slide active">
+              <img
+                src="assets/penjualan-1.png"
+                alt="Hasil penjualan Ahmad Fadel 1"
+              />
+            </div>
+
+            <div class="sales-slide">
+              <img
+                src="assets/penjualan-2.png"
+                alt="Hasil penjualan Ahmad Fadel 2"
+              />
+            </div>
+
+            <div class="sales-slide">
+              <img
+                src="assets/penjualan-3.png"
+                alt="Hasil penjualan Ahmad Fadel 3"
+              />
+            </div>
+
+            <div class="sales-slide">
+              <img
+                src="assets/penjualan-4.png"
+                alt="Hasil penjualan Ahmad Fadel 4"
+              />
+            </div>
+          </div>
+
+          <button
+            class="sales-btn"
+            onclick="changeSalesSlide(1)"
+            aria-label="Hasil penjualan berikutnya"
+          >
+            ›
+          </button>
+        </div>
+
+        <div class="sales-dots">
+          <button
+            class="sales-dot active"
+            onclick="showSalesSlide(0)"
+            aria-label="Hasil penjualan 1"
+          ></button>
+
+          <button
+            class="sales-dot"
+            onclick="showSalesSlide(1)"
+            aria-label="Hasil penjualan 2"
+          ></button>
+
+          <button
+            class="sales-dot"
+            onclick="showSalesSlide(2)"
+            aria-label="Hasil penjualan 3"
+          ></button>
+
+          <button
+            class="sales-dot"
+            onclick="showSalesSlide(3)"
+            aria-label="Hasil penjualan 4"
+          ></button>
+        </div>
+      </div>
+    </section>
+
     <!-- EVENT -->
     <section class="problem-section">
       <div class="container">
@@ -1298,11 +1352,10 @@
         </a> -->
       </div>
     </section>
-    
+
     <section class="registration-section" id="registration">
       <div class="container">
         <div class="registration-box">
-
           <div class="section-title">
             <h2>Daftar Webinar Gratis</h2>
             <p>
@@ -1314,34 +1367,46 @@
             <div class="form-group">
               <label for="nama">Nama Lengkap</label>
               <input
-                type="text" id="nama" name="nama" placeholder="Nama lengkap" required
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Nama lengkap"
+                required
               />
             </div>
 
             <div class="form-group">
               <label for="nohp">No. HP / WhatsApp</label>
-              <input type="tel" id="nohp" name="nohp" placeholder="Contoh: 081234567890" required />
+              <input
+                type="tel"
+                id="nohp"
+                name="nohp"
+                placeholder="Contoh: 081234567890"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
             </div>
 
-            <button type="submit" class="cta registration-button" >
+            <button type="submit" class="cta registration-button">
               🚀 Daftar Webinar
             </button>
 
-            <p
-              id="formMessage"
-              class="form-message"
-            ></p>
-
+            <p id="formMessage" class="form-message"></p>
           </form>
         </div>
       </div>
     </section>
-    
+
     <!-- =========================
      TESTIMONI
     ========================== -->
@@ -1359,7 +1424,8 @@
 
         <div class="testimonial-wrapper">
           <!-- PREVIOUS -->
-          <button class="testimonial-btn"
+          <button
+            class="testimonial-btn"
             onclick="changeTestimonial(-1)"
             aria-label="Testimoni sebelumnya"
           >
@@ -1369,19 +1435,22 @@
           <!-- IMAGE CAROUSEL -->
           <div class="testimonial-track">
             <div class="testimonial-image active">
-              <img src="assets/testimoni-1.png"
+              <img
+                src="assets/testimoni-1.png"
                 alt="Testimoni peserta mentoring 1"
               />
             </div>
 
             <div class="testimonial-image">
-              <img src="assets/testimoni-2.png"
+              <img
+                src="assets/testimoni-2.png"
                 alt="Testimoni peserta mentoring 2"
               />
             </div>
 
             <div class="testimonial-image">
-              <img src="assets/testimoni-3.png"
+              <img
+                src="assets/testimoni-3.png"
                 alt="Testimoni peserta mentoring 3"
               />
             </div>
@@ -1564,30 +1633,23 @@
     const WHATSAPP_GROUP_URL =
       "https://chat.whatsapp.com/G35fUOGsi9s5283cceDFp1?s=cl&p=a&ilr=4";
 
-    const registrationForm =
-      document.getElementById("registrationForm");
+    const registrationForm = document.getElementById("registrationForm");
 
-    const formMessage =
-      document.getElementById("formMessage");
+    const formMessage = document.getElementById("formMessage");
 
     registrationForm.addEventListener("submit", async function (event) {
       event.preventDefault();
 
-      const button =
-        registrationForm.querySelector("button[type='submit']");
+      const button = registrationForm.querySelector("button[type='submit']");
 
-      const nama =
-        document.getElementById("nama").value.trim();
+      const nama = document.getElementById("nama").value.trim();
 
-      const nohp =
-        document.getElementById("nohp").value.trim();
+      const nohp = document.getElementById("nohp").value.trim();
 
-      const email =
-        document.getElementById("email").value.trim();
+      const email = document.getElementById("email").value.trim();
 
       if (!nama || !nohp || !email) {
-        formMessage.textContent =
-          "Mohon lengkapi semua data.";
+        formMessage.textContent = "Mohon lengkapi semua data.";
 
         return;
       }
@@ -1595,40 +1657,34 @@
       button.disabled = true;
       button.textContent = "Mendaftarkan...";
 
-      formMessage.textContent =
-        "Sedang memproses pendaftaran...";
+      formMessage.textContent = "Sedang memproses pendaftaran...";
 
       const data = {
         nama: nama,
         nohp: nohp,
-        email: email
+        email: email,
       };
 
       try {
         await fetch(GOOGLE_SCRIPT_URL, {
           method: "POST",
           mode: "no-cors",
-          body: JSON.stringify(data)
+          body: JSON.stringify(data),
         });
 
         formMessage.textContent =
           "Pendaftaran berhasil! Mengarahkan ke grup WhatsApp...";
 
         setTimeout(() => {
-          window.location.href =
-            WHATSAPP_GROUP_URL;
+          window.location.href = WHATSAPP_GROUP_URL;
         }, 500);
-
       } catch (error) {
-
         console.error(error);
 
-        formMessage.textContent =
-          "Terjadi kesalahan. Silakan coba lagi.";
+        formMessage.textContent = "Terjadi kesalahan. Silakan coba lagi.";
 
         button.disabled = false;
-        button.textContent =
-          "🚀 Daftar Webinar";
+        button.textContent = "🚀 Daftar Webinar";
       }
     });
   </script>
