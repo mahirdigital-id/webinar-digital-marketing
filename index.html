@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Webinar Digital Marketing | Tambahan Penghasilan dari Bisnis Online
+    </title>
+
+    <meta name="description"
+      content="Webinar Digital Marketing gratis untuk kamu yang ingin mulai mendapatkan penghasilan tambahan dari bisnis online tanpa harus resign."
+    />
+
+    <link rel="icon" type="image/png" href="assets/logo-md.jpg"/>
+
+  <link rel="apple-touch-icon" href="assets/logo-md.jpg"/>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #1e293b;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1100px, 90%);
+        margin: 0 auto;
+      }
+
+      /* =========================
+         BUTTON
+      ========================= */
+
+      .cta {
+        display: inline-block;
+        padding: 16px 30px;
+        border-radius: 12px;
+        background: #2563eb;
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+      }
+
+      .cta:hover {
+        transform: translateY(-2px);
+        background: #1d4ed8;
+        box-shadow: 0 14px 30px rgba(37, 99, 235, 0.3);
+      }
+
+      /* =========================
+         HERO
+      ========================= */
+
+      .hero {
+        padding: 80px 0 90px;
+        background: radial-gradient(
+            circle at top right,
+            #dbeafe,
+            transparent 35%
+          ),
+          radial-gradient(circle at bottom left, #eff6ff, transparent 30%),
+          linear-gradient(135deg, #f8fbff, #ffffff);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: #bfdbfe;
+        border-radius: 50%;
+        opacity: 0.25;
+        top: -150px;
+        right: -100px;
+      }
+
+      .hero-content {
+        max-width: 850px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 999px;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 22px;
+        border: 1px solid #bfdbfe;
+      }
+
+      .hero h1 {
+        font-size: clamp(36px, 6vw, 62px);
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #0f172a;
+      }
+
+      .hero h1 span {
+        color: #2563eb;
+      }
+
+      .hero-description {
+        max-width: 720px;
+        margin: 0 auto 30px;
+        color: #475569;
+        font-size: 19px;
+      }
+
+      .event-info {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .event-item {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 12px 18px;
+        border-radius: 10px;
+        border: 1px solid #dbeafe;
+        font-weight: 600;
+        color: #334155;
+        box-shadow: 0 5px 15px rgba(15, 23, 42, 0.05);
+      }
+
+      /* =========================
+         SECTION
+      ========================= */
+
+      section {
+        padding: 80px 0;
+      }
+
+      .section-title {
+        max-width: 750px;
+        margin: 0 auto 45px;
+        text-align: center;
+      }
+
+      .section-title h2 {
+        font-size: clamp(30px, 5vw, 42px);
+        line-height: 1.2;
+        margin-bottom: 15px;
+        color: #0f172a;
+      }
+
+      .section-title p {
+        color: #64748b;
+        font-size: 17px;
+      }
+
+      /* =========================
+        SALES RESULT CAROUSEL
+      ========================= */
+      .sales-carousel {
+        background: #ffffff;
+        padding: 25px 0 10px;
+        overflow: hidden;
+      }
+
+      .sales-carousel-wrapper {
+        max-width: 850px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .sales-track {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+
+      .sales-slide {
+        display: none;
+        width: 100%;
+        animation: salesFade 0.35s ease;
+      }
+
+      .sales-slide.active {
+        display: block;
+      }
+
+      .sales-slide img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 16px;
+        border: 1px solid #dbeafe;
+        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.08);
+      }
+
+      @keyframes salesFade {
+        from {
+          opacity: 0;
+          transform: translateX(10px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .sales-btn {
+        flex-shrink: 0;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 1px solid #bfdbfe;
+        background: white;
+        color: #2563eb;
+        font-size: 26px;
+        line-height: 1;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        z-index: 2;
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.08);
+      }
+
+      .sales-btn:hover {
+        background: #2563eb;
+        color: white;
+        border-color: #2563eb;
+        transform: scale(1.05);
+      }
+
+      .sales-dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 12px;
+      }
+
+      .sales-dot {
+        width: 7px;
+        height: 7px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: #bfdbfe;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .sales-dot.active {
+        width: 20px;
+        border-radius: 10px;
+        background: #2563eb;
+      }
+
+      @media (max-width: 768px) {
+        .sales-carousel {
+          padding: 15px 0 5px;
+        }
+
+        .sales-carousel-wrapper {
+          gap: 6px;
+        }
+
+        .sales-track {
+          border-radius: 12px;
+        }
+
+        .sales-slide img {
+          width: 100%;
+          height: auto;
+          max-height: none;
+          object-fit: contain;
+          border-radius: 12px;
+        }
+
+        .sales-btn {
+          width: 30px;
+          height: 30px;
+          font-size: 21px;
+        }
+
+        .sales-dots {
+          margin-top: 8px;
+        }
+      }
+
+
+      /* =========================
+         PROBLEM
+      ========================= */
+
+      .problem-section {
+        background: #f8fafc;
+      }
+
+      .problem-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .problem-card {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid #e2e8f0;
+        transition: all 0.2s ease;
+      }
+
+      .problem-card:hover {
+        transform: translateY(-4px);
+        border-color: #bfdbfe;
+        box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+      }
+
+      .problem-icon {
+        font-size: 34px;
+        margin-bottom: 15px;
+      }
+
+      .problem-card h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #1e293b;
+      }
+
+      .problem-card p {
+        color: #64748b;
+      }
+
+      /* =========================
+         SOLUTION
+      ========================= */
+
+      .solution {
+        max-width: 850px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .solution p {
+        color: #475569;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .highlight {
+        background: #eff6ff;
+        border-left: 5px solid #2563eb;
+        padding: 24px;
+        border-radius: 12px;
+        margin-top: 30px;
+        text-align: left;
+        color: #1e3a8a;
+      }
+
+      /* =========================
+   MATERIAL / BENEFIT
+========================= */
+
+      .material-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .material-item {
+        display: flex;
+        gap: 15px;
+        padding: 22px;
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        transition: all 0.2s ease;
+      }
+
+      .material-item:hover {
+        border-color: #bfdbfe;
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.06);
+      }
+
+      .material-icon {
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #dbeafe;
+        color: #2563eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+      }
+
+      .material-item strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #1e293b;
+      }
+
+      .material-item p {
+        color: #64748b;
+      }
+
+      /* =========================
+         TESTIMONI
+      ========================= */
+
+      .testimonial-section {
+        background: #f8fafc;
+        overflow: hidden;
+      }
+
+      .testimonial-section .section-title {
+        margin-bottom: 35px;
+      }
+
+      .testimonial-section .section-label {
+        margin-bottom: 12px;
+      }
+
+      .testimonial-wrapper {
+        position: relative;
+        max-width: 850px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .testimonial-track {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 24px;
+      }
+
+      .testimonial-image {
+        display: none;
+        width: 100%;
+        animation: testimonialFade 0.4s ease;
+      }
+
+      .testimonial-image.active {
+        display: block;
+      }
+
+      .testimonial-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 650px;
+        object-fit: contain;
+        border-radius: 24px;
+        background: white;
+        border: 1px solid #dbeafe;
+        box-shadow: 0 15px 40px rgba(37, 99, 235, 0.1);
+      }
+
+      @keyframes testimonialFade {
+        from {
+          opacity: 0;
+          transform: translateX(15px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .testimonial-btn {
+        flex-shrink: 0;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 1px solid #bfdbfe;
+        background: white;
+        color: #2563eb;
+        font-size: 32px;
+        line-height: 1;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        z-index: 2;
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.08);
+      }
+
+      .testimonial-btn:hover {
+        background: #2563eb;
+        color: white;
+        border-color: #2563eb;
+        transform: scale(1.05);
+      }
+
+      .testimonial-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 25px;
+      }
+
+      .dot {
+        width: 9px;
+        height: 9px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: #bfdbfe;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .dot.active {
+        width: 25px;
+        border-radius: 10px;
+        background: #2563eb;
+      }
+
+      .testimonial-counter {
+        text-align: center;
+        color: #64748b;
+        font-size: 14px;
+        margin-top: 12px;
+      }
+
+      @media (max-width: 768px) {
+        .testimonial-wrapper {
+          gap: 8px;
+        }
+
+        .testimonial-track {
+          border-radius: 18px;
+        }
+
+        .testimonial-image img {
+          border-radius: 18px;
+          max-height: 550px;
+        }
+
+        .testimonial-btn {
+          width: 38px;
+          height: 38px;
+          font-size: 26px;
+        }
+      }
+
+      /* =========================
+         MENTOR
+      ========================= */
+
+      .mentor-section {
+        background: #ffffff;
+      }
+
+      .section-label {
+        display: inline-block;
+        padding: 7px 15px;
+        border-radius: 999px;
+        background: #dbeafe;
+        color: #2563eb;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .mentor {
+        display: grid;
+        grid-template-columns: 380px 1fr;
+        gap: 60px;
+        align-items: center;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .mentor-photo {
+        width: 100%;
+        height: 430px;
+        border-radius: 30px;
+        overflow: hidden;
+        background: #eff6ff;
+        border: 1px solid #dbeafe;
+        box-shadow: 0 20px 50px rgba(37, 99, 235, 0.12);
+      }
+
+      .mentor-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+      }
+
+      .mentor-content {
+        padding: 10px 0;
+      }
+
+      .mentor-badge {
+        display: inline-block;
+        padding: 7px 14px;
+        border-radius: 999px;
+        background: #eff6ff;
+        color: #2563eb;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .mentor-content h2 {
+        font-size: 42px;
+        line-height: 1.2;
+        color: #0f172a;
+        margin-bottom: 5px;
+      }
+
+      .mentor-content h3 {
+        color: #2563eb;
+        font-size: 18px;
+        margin-bottom: 22px;
+      }
+
+      .mentor-content p {
+        color: #64748b;
+        font-size: 17px;
+        margin-bottom: 15px;
+      }
+
+      .mentor-stats {
+        display: flex;
+        gap: 35px;
+        margin-top: 30px;
+        padding-top: 25px;
+        border-top: 1px solid #e2e8f0;
+      }
+
+      .mentor-stats div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mentor-stats strong {
+        color: #2563eb;
+        font-size: 26px;
+      }
+
+      .mentor-stats span {
+        color: #64748b;
+        font-size: 13px;
+      }
+
+      /* =========================
+         EVENT
+      ========================= */
+
+      .event-box {
+        max-width: 750px;
+        margin: auto;
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 25px;
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 15px 40px rgba(37, 99, 235, 0.08);
+      }
+
+      .event-box h2 {
+        font-size: 36px;
+        margin-bottom: 25px;
+        color: #0f172a;
+      }
+
+      .event-detail {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .detail {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #dbeafe;
+      }
+
+      .detail span {
+        display: block;
+        font-size: 14px;
+        color: #64748b;
+        margin-bottom: 5px;
+      }
+
+      .detail strong {
+        font-size: 17px;
+        color: #1e293b;
+      }
+
+      /* =========================
+         PRICE
+      ========================= */
+
+      .price-section {
+        background: #f8fafc;
+        text-align: center;
+      }
+
+      .old-price {
+        color: #94a3b8;
+        text-decoration: line-through;
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      .free-price {
+        font-size: clamp(48px, 8vw, 72px);
+        color: #2563eb;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .price-note {
+        color: #64748b;
+        margin-bottom: 30px;
+      }
+
+      /* =========================
+         FAQ
+      ========================= */
+
+      .faq {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .faq-item {
+        padding: 22px 0;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .faq-item h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: #1e293b;
+      }
+
+      .faq-item p {
+        color: #64748b;
+      }
+
+      /* =========================
+         FINAL CTA
+      ========================= */
+
+      .final-cta {
+        background: radial-gradient(
+            circle at top right,
+            #3b82f6,
+            transparent 35%
+          ),
+          linear-gradient(135deg, #1e3a8a, #2563eb);
+        color: white;
+        text-align: center;
+      }
+
+      .final-cta h2 {
+        font-size: clamp(32px, 5vw, 48px);
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+
+      .final-cta p {
+        max-width: 650px;
+        margin: 0 auto 30px;
+        color: #dbeafe;
+        font-size: 18px;
+      }
+
+      .final-cta .cta {
+        background: white;
+        color: #1d4ed8;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
+      }
+
+      .final-cta .cta:hover {
+        background: #eff6ff;
+      }
+      
+      /* =========================
+   REGISTRATION FORM
+========================= */
+
+.registration-section {
+  background: #f8fafc;
+}
+
+.registration-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.08);
+}
+
+.registration-box .section-title {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  color: #1e293b;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.registration-button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.registration-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-message {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .registration-box {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+}
+
+      /* =========================
+         FOOTER
+      ========================= */
+
+      footer {
+        padding: 30px 0;
+        text-align: center;
+        color: #94a3b8;
+        font-size: 14px;
+        background: #0f172a;
+      }
+
+      /* =========================
+         MOBILE
+      ========================= */
+
+      @media (max-width: 768px) {
+        section {
+          padding: 60px 0;
+        }
+
+        .hero {
+          padding: 65px 0;
+        }
+
+        .hero h1 {
+          font-size: 40px;
+        }
+
+        .hero-description {
+          font-size: 17px;
+        }
+
+        .problem-grid,
+        .benefit-grid,
+        .material-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mentor {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 25px;
+        }
+
+        .mentor-photo {
+          margin: auto;
+        }
+
+        .event-detail {
+          grid-template-columns: 1fr;
+        }
+
+        .event-box {
+          padding: 28px 20px;
+        }
+
+        .event-box h2 {
+          font-size: 30px;
+        }
+
+        .cta {
+          width: 100%;
+          padding: 15px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="badge">WEBINAR DIGITAL MARKETING</div>
+
+          <h1>
+            Dapetin Tambahan
+            <span>5–10 Juta/Bulan</span>
+            dari Bisnis Online
+          </h1>
+
+          <p class="hero-description">
+            Pelajari strategi digital marketing simpel yang bisa kamu jalankan
+            dari rumah, bahkan sambil kerja kantoran atau mengurus rumah.
+          </p>
+
+          <a href="#registration" class="cta">
+            🚀 GRATIS — JOIN GRUP WEBINAR
+          </a>
+
+          <div class="event-info">
+            <div class="event-item">🗓️ Jumat, 21 Agustus 2026</div>
+            <div class="event-item">⏰ 19.30 WIB</div>
+            <div class="event-item">💻 Via Zoom</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    </header>
+
+    <!-- SALES RESULT CAROUSEL -->
+    <section class="sales-carousel">
+      <div class="container">
+        <div class="sales-carousel-wrapper">
+
+          <button class="sales-btn"
+            onclick="changeSalesSlide(-1)"
+            aria-label="Hasil penjualan sebelumnya"
+          >
+            ‹
+          </button>
+
+          <div class="sales-track">
+            <div class="sales-slide active">
+              <img src="assets/penjualan-1.png" alt="Hasil penjualan Ahmad Fadel 1" />
+            </div>
+
+            <div class="sales-slide">
+              <img src="assets/penjualan-2.png"
+                alt="Hasil penjualan Ahmad Fadel 2"
+              />
+            </div>
+
+            <div class="sales-slide">
+              <img src="assets/penjualan-3.png"
+                alt="Hasil penjualan Ahmad Fadel 3"
+              />
+            </div>
+
+            <div class="sales-slide">
+              <img src="assets/penjualan-4.png"
+                alt="Hasil penjualan Ahmad Fadel 4"
+              />
+            </div>
+          </div>
+
+          <button class="sales-btn"
+            onclick="changeSalesSlide(1)"
+            aria-label="Hasil penjualan berikutnya"
+          >
+            ›
+          </button>
+
+        </div>
+
+        <div class="sales-dots">
+          <button
+            class="sales-dot active"
+            onclick="showSalesSlide(0)"
+            aria-label="Hasil penjualan 1"
+          ></button>
+
+          <button
+            class="sales-dot"
+            onclick="showSalesSlide(1)"
+            aria-label="Hasil penjualan 2"
+          ></button>
+
+          <button
+            class="sales-dot"
+            onclick="showSalesSlide(2)"
+            aria-label="Hasil penjualan 3"
+          ></button>
+
+          <button
+            class="sales-dot"
+            onclick="showSalesSlide(3)"
+            aria-label="Hasil penjualan 4"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="problem-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Pengen Punya Penghasilan Tambahan, Tapi...</h2>
+          <p>Mungkin beberapa kondisi ini terasa familiar.</p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon">😵</div>
+
+            <h3>Bingung harus mulai dari mana</h3>
+
+            <p>
+              Banyak informasi tentang bisnis online, tapi justru makin bingung
+              menentukan langkah pertama.
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon">🕐</div>
+
+            <h3>Nggak punya banyak waktu</h3>
+
+            <p>
+              Sudah sibuk kerja kantoran atau mengurus rumah dan keluarga
+              sehingga sulit mencari waktu untuk memulai.
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon">💭</div>
+
+            <h3>Takut nggak bisa karena masih awam</h3>
+
+            <p>
+              Belum pernah belajar digital marketing dan merasa harus jago
+              teknologi dulu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section>
+      <div class="container">
+        <div class="solution">
+          <div class="section-title">
+            <h2>Kamu Nggak Harus Resign untuk Mulai</h2>
+          </div>
+
+          <p>
+            Bayangkan kamu tetap menjalani aktivitas seperti biasa—bekerja di
+            kantor, mengurus rumah, atau mengurus anak—tapi di saat yang sama
+            mulai punya sumber penghasilan tambahan dari internet.
+          </p>
+
+          <p>
+            Kabar baiknya, kamu tidak perlu jago teknologi, tidak perlu punya
+            pengalaman digital marketing, bahkan tidak harus punya produk
+            sendiri.
+          </p>
+
+          <div class="highlight">
+            <strong>
+              Yang kamu butuhkan adalah memahami langkah-langkah sederhana yang
+              bisa dipelajari dan dipraktikkan oleh pemula.
+            </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIAL -->
+    <section class="problem-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Apa Saja yang Akan Dipelajari?</h2>
+
+          <p>Materi praktis yang bisa kamu pahami meskipun masih pemula.</p>
+        </div>
+
+        <div class="material-grid">
+          <div class="material-item">
+            <div class="material-icon">🎯</div>
+
+            <div>
+              <strong>Fundamental Jualan Online</strong>
+              <p>
+                Fundamental yang bisa digunakan untuk menjual berbagai jenis
+                produk.
+              </p>
+            </div>
+          </div>
+
+          <div class="material-item">
+            <div class="material-icon">🔎</div>
+
+            <div>
+              <strong>Menemukan Produk Winning</strong>
+              <p>Cara menemukan produk dengan demand yang tinggi.</p>
+            </div>
+          </div>
+
+          <div class="material-item">
+            <div class="material-icon">📣</div>
+            <div>
+              <strong>Praktik Iklan FB & IG</strong>
+              <p>
+                Mengenal strategi iklan Facebook dan Instagram agar lebih
+                terarah.
+              </p>
+            </div>
+          </div>
+
+          <div class="material-item">
+            <div class="material-icon">📱</div>
+            <div>
+              <strong>Riset Konten Kompetitor</strong>
+              <p>
+                Cara menemukan referensi konten jualan yang sudah terbukti
+                menarik perhatian.
+              </p>
+            </div>
+          </div>
+
+          <div class="material-item">
+            <div class="material-icon">🤝</div>
+            <div>
+              <strong>Strategi Kolaborasi Digital Marketing 2026</strong>
+              <p>Mengenal peluang kolaborasi dalam dunia digital marketing.</p>
+            </div>
+          </div>
+
+          <div class="material-item">
+            <div class="material-icon">🔥</div>
+            <div>
+              <strong>Bocoran Produk Winning</strong>
+              <p>Referensi produk yang telah terjual +10.000 pcs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     MENTOR
+    ========================== -->
+
+    <section class="mentor-section">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">MENTOR WEBINAR</span>
+
+          <h2>Belajar Langsung dari Praktisi</h2>
+
+          <p>
+            Dapatkan insight dan strategi digital marketing yang praktis dan
+            mudah dipahami oleh pemula.
+          </p>
+        </div>
+
+        <div class="mentor">
+          <div class="mentor-photo">
+            <img
+              src="assets/ahmad-fadel.jpg"
+              alt="Ahmad Fadel - Digital Marketing Specialist"
+            />
+          </div>
+
+          <div class="mentor-content">
+            <h2>Ahmad Fadel</h2>
+            <div class="mentor-badge">✓ Digital Marketing Specialist</div>
+
+            <p>
+              Telah membantu lebih dari
+              <strong>20 brand nasional</strong>
+              dalam mengembangkan strategi digital marketing.
+            </p>
+
+            <p>
+              Di webinar ini, Mas Fadel akan membagikan strategi yang praktis
+              dan mudah dipahami, bahkan untuk kamu yang baru mulai belajar
+              digital marketing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENT -->
+    <section class="problem-section">
+      <div class="container">
+        <div class="event-box">
+          <h2>📅 Kapan Webinarnya?</h2>
+
+          <div class="event-detail">
+            <div class="detail">
+              <span>Tanggal</span>
+              <strong>🗓️ Jumat, 21 Agustus 2026</strong>
+            </div>
+
+            <div class="detail">
+              <span>Waktu</span>
+              <strong>⏰ 19.30 WIB</strong>
+            </div>
+
+            <div class="detail">
+              <span>Platform</span>
+              <strong>💻 Zoom Meeting</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE -->
+    <section class="price-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Berapa HTM-nya?</h2>
+        </div>
+
+        <div class="old-price">Rp50.000</div>
+        <div class="free-price">GRATIS</div>
+        <p class="price-note">Khusus minggu ini</p>
+
+        <!-- <a href="#registration" class="cta">
+          🎁 Amankan Slot Webinar
+        </a> -->
+      </div>
+    </section>
+    
+    <section class="registration-section" id="registration">
+      <div class="container">
+        <div class="registration-box">
+
+          <div class="section-title">
+            <h2>Daftar Webinar Gratis</h2>
+            <p>
+              Isi data di bawah ini untuk mendapatkan akses ke grup webinar.
+            </p>
+          </div>
+
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input
+                type="text" id="nama" name="nama" placeholder="Nama lengkap" required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="nohp">No. HP / WhatsApp</label>
+              <input type="tel" id="nohp" name="nohp" placeholder="Contoh: 081234567890" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required />
+            </div>
+
+            <button type="submit" class="cta registration-button" >
+              🚀 Daftar Webinar
+            </button>
+
+            <p
+              id="formMessage"
+              class="form-message"
+            ></p>
+
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <!-- =========================
+     TESTIMONI
+    ========================== -->
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label"> TESTIMONI PESERTA </span>
+          <h2>Kata Mereka Tentang Mentoring Ini</h2>
+          <p>
+            Lihat pengalaman dan cerita dari peserta yang sudah mengikuti
+            mentoring sebelumnya.
+          </p>
+        </div>
+
+        <div class="testimonial-wrapper">
+          <!-- PREVIOUS -->
+          <button class="testimonial-btn"
+            onclick="changeTestimonial(-1)"
+            aria-label="Testimoni sebelumnya"
+          >
+            ‹
+          </button>
+
+          <!-- IMAGE CAROUSEL -->
+          <div class="testimonial-track">
+            <div class="testimonial-image active">
+              <img src="assets/testimoni-1.png"
+                alt="Testimoni peserta mentoring 1"
+              />
+            </div>
+
+            <div class="testimonial-image">
+              <img src="assets/testimoni-2.png"
+                alt="Testimoni peserta mentoring 2"
+              />
+            </div>
+
+            <div class="testimonial-image">
+              <img src="assets/testimoni-3.png"
+                alt="Testimoni peserta mentoring 3"
+              />
+            </div>
+
+            <div class="testimonial-image">
+              <img
+                src="assets/testimoni-4.png"
+                alt="Testimoni peserta mentoring 4"
+              />
+            </div>
+
+            <div class="testimonial-image">
+              <img
+                src="assets/testimoni-5.png"
+                alt="Testimoni peserta mentoring 5"
+              />
+            </div>
+
+            <div class="testimonial-image">
+              <img
+                src="assets/testimoni-6.png"
+                alt="Testimoni peserta mentoring 6"
+              />
+            </div>
+          </div>
+
+          <!-- NEXT -->
+          <button
+            class="testimonial-btn"
+            onclick="changeTestimonial(1)"
+            aria-label="Testimoni berikutnya"
+          >
+            ›
+          </button>
+        </div>
+
+        <!-- DOTS -->
+        <div class="testimonial-dots">
+          <button
+            class="dot active"
+            onclick="showTestimonial(0)"
+            aria-label="Testimoni 1"
+          ></button>
+
+          <button
+            class="dot"
+            onclick="showTestimonial(1)"
+            aria-label="Testimoni 2"
+          ></button>
+
+          <button
+            class="dot"
+            onclick="showTestimonial(2)"
+            aria-label="Testimoni 3"
+          ></button>
+
+          <button
+            class="dot"
+            onclick="showTestimonial(3)"
+            aria-label="Testimoni 4"
+          ></button>
+
+          <button
+            class="dot"
+            onclick="showTestimonial(4)"
+            aria-label="Testimoni 5"
+          ></button>
+
+          <button
+            class="dot"
+            onclick="showTestimonial(5)"
+            aria-label="Testimoni 6"
+          ></button>
+        </div>
+
+        <div class="testimonial-counter">
+          <span id="testimonialNumber">1</span> / 6
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        © 2026 Webinar Digital Marketing. All rights reserved.
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    let currentTestimonial = 0;
+
+    const testimonials = document.querySelectorAll(".testimonial-image");
+
+    const dots = document.querySelectorAll(".dot");
+
+    const testimonialNumber = document.getElementById("testimonialNumber");
+
+    function showTestimonial(index) {
+      if (index >= testimonials.length) {
+        index = 0;
+      }
+
+      if (index < 0) {
+        index = testimonials.length - 1;
+      }
+
+      testimonials.forEach((item) => {
+        item.classList.remove("active");
+      });
+
+      dots.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+
+      testimonials[index].classList.add("active");
+
+      dots[index].classList.add("active");
+
+      testimonialNumber.textContent = index + 1;
+
+      currentTestimonial = index;
+    }
+
+    function changeTestimonial(direction) {
+      showTestimonial(currentTestimonial + direction);
+    }
+
+    // Auto slide setiap 5 detik
+    setInterval(() => {
+      changeTestimonial(1);
+    }, 5000);
+  </script>
+  <script>
+    /* =========================
+      SALES RESULT CAROUSEL
+    ========================= */
+
+    let currentSalesSlide = 0;
+
+    const salesSlides = document.querySelectorAll(".sales-slide");
+    const salesDots = document.querySelectorAll(".sales-dot");
+
+    function showSalesSlide(index) {
+      if (index >= salesSlides.length) {
+        index = 0;
+      }
+
+      if (index < 0) {
+        index = salesSlides.length - 1;
+      }
+
+      salesSlides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      salesDots.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+
+      salesSlides[index].classList.add("active");
+      salesDots[index].classList.add("active");
+
+      currentSalesSlide = index;
+    }
+
+    function changeSalesSlide(direction) {
+      showSalesSlide(currentSalesSlide + direction);
+    }
+
+    // Auto slide setiap 4 detik
+    setInterval(() => {
+      changeSalesSlide(1);
+    }, 4000);
+  </script>
+  <script>
+    const GOOGLE_SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycbxgDeMhvtTsavqRM0yRIY6Gkwqu4OjZZHioDxfxYLSf3LC_LIdTxy8A3TeWQ_nNMhLM/exec";
+
+    const WHATSAPP_GROUP_URL =
+      "https://chat.whatsapp.com/G35fUOGsi9s5283cceDFp1?s=cl&p=a&ilr=4";
+
+    const registrationForm =
+      document.getElementById("registrationForm");
+
+    const formMessage =
+      document.getElementById("formMessage");
+
+    registrationForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const button =
+        registrationForm.querySelector("button[type='submit']");
+
+      const nama =
+        document.getElementById("nama").value.trim();
+
+      const nohp =
+        document.getElementById("nohp").value.trim();
+
+      const email =
+        document.getElementById("email").value.trim();
+
+      if (!nama || !nohp || !email) {
+        formMessage.textContent =
+          "Mohon lengkapi semua data.";
+
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = "Mendaftarkan...";
+
+      formMessage.textContent =
+        "Sedang memproses pendaftaran...";
+
+      const data = {
+        nama: nama,
+        nohp: nohp,
+        email: email
+      };
+
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          body: JSON.stringify(data)
+        });
+
+        formMessage.textContent =
+          "Pendaftaran berhasil! Mengarahkan ke grup WhatsApp...";
+
+        setTimeout(() => {
+          window.location.href =
+            WHATSAPP_GROUP_URL;
+        }, 500);
+
+      } catch (error) {
+
+        console.error(error);
+
+        formMessage.textContent =
+          "Terjadi kesalahan. Silakan coba lagi.";
+
+        button.disabled = false;
+        button.textContent =
+          "🚀 Daftar Webinar";
+      }
+    });
+  </script>
+</html>
