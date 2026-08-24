@@ -17,6 +17,44 @@
 
     <link rel="apple-touch-icon" href="assets/logo-md.jpg" />
 
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1830958241620251");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1830958241620251&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
       * {
         margin: 0;
@@ -1019,7 +1057,7 @@
           </a>
 
           <div class="event-info">
-            <div class="event-item">🗓️ Jumat, 21 Agustus 2026</div>
+            <div class="event-item">🗓️ Jumat, 28 Agustus 2026</div>
             <div class="event-item">⏰ 19.30 WIB</div>
             <div class="event-item">💻 Via Zoom</div>
           </div>
@@ -1319,7 +1357,7 @@
           <div class="event-detail">
             <div class="detail">
               <span>Tanggal</span>
-              <strong>🗓️ Jumat, 21 Agustus 2026</strong>
+              <strong>🗓️ Jumat, 28 Agustus 2026</strong>
             </div>
 
             <div class="detail">
@@ -1671,6 +1709,11 @@
           mode: "no-cors",
           body: JSON.stringify(data),
         });
+
+        // Kirim event Lead ke Meta Pixel — atribusi ke ad ditangani otomatis oleh Meta
+        if (typeof fbq === "function") {
+          fbq("track", "Lead");
+        }
 
         formMessage.textContent =
           "Pendaftaran berhasil! Mengarahkan ke grup WhatsApp...";
