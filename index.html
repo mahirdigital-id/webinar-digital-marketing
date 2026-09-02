@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" href="assets/logo-md.jpg" />
 
     <!-- Meta Pixel Code -->
-    <!-- <script>
+    <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -52,7 +52,7 @@
         style="display: none"
         src="https://www.facebook.com/tr?id=1830958241620251&ev=PageView&noscript=1"
       />
-    </noscript> -->
+    </noscript>
     <!-- End Meta Pixel Code -->
 
     <style>
@@ -1057,8 +1057,8 @@
           </a>
 
           <div class="event-info">
-            <div class="event-item">🗓️ Sabtu, 29 Agustus 2026</div>
-            <div class="event-item">⏰ 09.00 WIB</div>
+            <div class="event-item">🗓️ Jumat, 11 September 2026</div>
+            <div class="event-item">⏰ 19.30 WIB</div>
             <div class="event-item">💻 Via Zoom</div>
           </div>
         </div>
@@ -1357,12 +1357,12 @@
           <div class="event-detail">
             <div class="detail">
               <span>Tanggal</span>
-              <strong>🗓️ Sabtu, 29 Agustus 2026</strong>
+              <strong>🗓️ Jumat, 11 September 2026</strong>
             </div>
 
             <div class="detail">
               <span>Waktu</span>
-              <strong>⏰ 09.00 WIB</strong>
+              <strong>⏰ 19.30 WIB</strong>
             </div>
 
             <div class="detail">
@@ -1669,7 +1669,7 @@
       "https://script.google.com/macros/s/AKfycbxgDeMhvtTsavqRM0yRIY6Gkwqu4OjZZHioDxfxYLSf3LC_LIdTxy8A3TeWQ_nNMhLM/exec";
 
     const WHATSAPP_GROUP_URL =
-      "https://chat.whatsapp.com/HUsCKRdVbnI2G2xRRD7tTB?s=cl&p=a&ilr=4";
+      "https://chat.whatsapp.com/KFbDQ4xS2Iv2KSN0nMVB2r?s=cl&p=a&ilr=4";
 
     const registrationForm = document.getElementById("registrationForm");
 
@@ -1711,9 +1711,9 @@
         });
 
         // Kirim event Lead ke Meta Pixel — atribusi ke ad ditangani otomatis oleh Meta
-        //if (typeof fbq === "function") {
-        //fbq("track", "Lead");
-        //}
+        if (typeof fbq === "function") {
+          fbq("track", "Lead");
+        }
 
         formMessage.textContent =
           "Pendaftaran berhasil! Mengarahkan ke grup WhatsApp...";
